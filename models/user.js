@@ -47,6 +47,9 @@ const UserSchema=new mongoose.Schema(
             },
             year:{
                 type:String
+            },
+            cpi:{
+                type:String
             }
         }],
         about:{
@@ -71,7 +74,60 @@ const UserSchema=new mongoose.Schema(
         }],
         role:{
             type:String
-        }
+        },
+
+        jee_rank:{
+            type:String
+        },
+        dob:{
+            type:String,
+        },
+        internships:[{
+            title:{
+                type:String,
+            },
+            year:{
+                type:String,
+            },
+            description:[{
+                type:String
+            }]
+        }],
+
+        projects:[{
+            title:{
+                type:String,
+            },
+            year:{
+                type:String,
+            },
+            description:[{
+                type:String
+            }]
+        }],
+
+        positions:[{
+            title:{
+                type:String,
+            },
+            year:{
+                type:String,
+            },
+            description:[{
+                type:String
+            }]
+        }],
+
+        hobbies:[{
+            type:String
+        }],
+
+        achievements:[{
+            type:String
+        }]
+
+
+
 
     }
 )
